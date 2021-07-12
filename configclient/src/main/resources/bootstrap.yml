@@ -10,11 +10,12 @@ spring:
       label: master
       discovery:
         enabled: true
-        serviceId: configserver
+        service-id: configserver
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
+
 management:
   endpoints:
     web:

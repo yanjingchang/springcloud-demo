@@ -22,7 +22,7 @@ spring:
     password: guest
 eureka:
   client:
-    serviceUrl:
+    service-Url:
       defaultZone: http://localhost:8761/eureka/
 management:
   endpoints:

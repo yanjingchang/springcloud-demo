@@ -5,3 +5,6 @@ POST http://localhost:8070/actuator/bus-refresh
 Accept: application/json
 
 ###
+GET http://localhost:8081/master
+
+###
