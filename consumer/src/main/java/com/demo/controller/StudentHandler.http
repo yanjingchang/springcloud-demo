@@ -1,0 +1,35 @@
+###查询所有
+GET http://localhost:8020/consumer/findall
+Accept: application/json
+
+###根据id查询
+GET http://localhost:8020/consumer/findbyid/2
+Accept: application/json
+
+###增加
+POST http://localhost:8020/consumer/save
+Accept: application/json
+Content-Type: application/json; charset=UTF-8
+
+{
+  "id": 4,
+  "name": "颜景昌",
+  "gender": "男"
+}
+
+###修改
+PUT http://localhost:8020/consumer/update
+Accept: application/json
+Content-Type: application/json; charset=UTF-8
+
+{
+  "id": 2,
+  "name": "若文",
+  "gender": "男"
+}
+
+###根据id删除
+DELETE http://localhost:8020/consumer/delete/4
+Accept: application/json
+
+###

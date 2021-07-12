@@ -1,0 +1,17 @@
+###查询所有的学生
+GET http://localhost:8030/p/student/findall
+Accept: application/json
+
+###provider端口测试
+GET http://localhost:8010/student/index
+Accept: application/json
+
+###provider端口测试
+GET http://localhost:8011/student/index
+Accept: application/json
+
+###通过gateway访问provider,查看使用的端口，是否实现了负载均衡
+GET http://localhost:8030/p/student/index
+Accept: application/json
+
+###

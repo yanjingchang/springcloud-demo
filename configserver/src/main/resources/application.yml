@@ -1,0 +1,31 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    bus：
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+          uri: https://github.com/yanjingchang/springcloud-demo.git
+          searchPaths: config
+          username: yanjingchang
+          password: Github_7920
+      label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

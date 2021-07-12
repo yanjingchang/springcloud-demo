@@ -1,0 +1,43 @@
+###Ribbon查询所有
+GET http://localhost:8050/feign/findall
+Accept: application/json
+
+###根据id查询
+GET http://localhost:8050/feign/findbyid/2
+Accept: application/json
+
+###增加
+POST http://localhost:8050/feign/save
+Accept: application/json
+Content-Type: application/json; charset=UTF-8
+
+{
+  "id": 4,
+  "name": "yanjingchang",
+  "gender": "男"
+}
+
+###修改
+
+PUT http://localhost:8050/feign/update
+Accept: application/json
+Content-Type: application/json; charset=UTF-8
+
+{
+  "id": 2,
+  "name": "yueyue",
+  "gender": "男"
+}
+
+###根据id删除
+DELETE http://localhost:8050/feign/delete/4
+Accept: application/json
+
+###负载均衡测试
+
+GET http://localhost:8050/feign/index
+
+###Hystrix容错机制测试
+GET http://localhost:8050/feign/index
+
+###
