@@ -4,7 +4,7 @@ spring:
   application:
     name: configserver
   cloud:
-    bus：
+    bus:
       trace:
         enable: true
     config:

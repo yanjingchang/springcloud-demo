@@ -2,5 +2,6 @@ GET http://localhost:8070/config/index
 
 ###
 POST http://localhost:8070/actuator/bus-refresh
+Accept: application/json
 
 ###
