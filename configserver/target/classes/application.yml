@@ -1,5 +1,7 @@
 server:
   port: 8888
+
+
 spring:
   application:
     name: configserver
@@ -20,10 +22,7 @@ spring:
     port: 5672
     username: guest
     password: guest
-eureka:
-  client:
-    service-Url:
-      defaultZone: http://localhost:8761/eureka/
+
 management:
   endpoints:
     web:
